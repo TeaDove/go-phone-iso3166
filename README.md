@@ -26,7 +26,7 @@ func main() {
 	ru, _ := phone_iso3166.GetCountry(79778725196)
 	println(ru) // prints "RU"
 
-    kz, _ := phone_iso3166.GetCountryFromString("77051140999")
+	kz, _ := phone_iso3166.GetCountryFromString("77051140999")
 	println(kz) // prints "KZ"
 }
 ```

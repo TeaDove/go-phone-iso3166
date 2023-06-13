@@ -12,14 +12,23 @@ GO version of same python project: [phone_iso3166](https://pypi.org/project/phon
 ## Installing
 
 ```
-go get -u github.com/TeaDove/go-phone-iso3166
+go get -u github.com/teadove/go-phone-iso3166
 ```
 
 ## Example
 
 ```go
-countryCode, _ := GetCountry("+79778725196")
-print(countryCode) // prints "RU"
+package main
+
+import "github.com/teadove/go-phone-iso3166/phone_iso3166"
+
+func main(){
+    countryCode, _ := phone_iso3166.GetCountry(79778725196)
+	print(countryCode) // prints "RU"
+	
+	countryCode, _ := phone_iso3166.GetCountryFromString("77051140999")
+    print(countryCode) // prints "KZ"
+}
 ```
 
 

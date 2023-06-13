@@ -1,4 +1,4 @@
-module github.com/TeaDove/go-phone-iso3166
+module github.com/teadove/go-phone-iso3166
 
 go 1.20
 

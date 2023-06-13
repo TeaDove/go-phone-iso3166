@@ -17,7 +17,7 @@ func TestUnit_GetCountryRU_Ok(t *testing.T) {
 }
 
 func TestUnit_GetCountryKZ_Ok(t *testing.T) {
-	countryCode := MustGetCountry(77051140675)
+	countryCode := MustGetCountry(77051140999)
 	assert.Equal(t, countryCode, "KZ")
 }
 

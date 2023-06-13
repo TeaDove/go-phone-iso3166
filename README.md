@@ -12,7 +12,7 @@ GO version of same python project: [phone_iso3166](https://pypi.org/project/phon
 ## Installing
 
 ```
-go get -u github.com/teadove/go-phone-iso3166
+go get -u github.com/TeaDove/go-phone-iso3166
 ```
 
 ## Example

@@ -26,20 +26,3 @@ func traverse(phoneNumber reversedPhoneNumber, rune mapRune) (string, error) {
 	}
 	return traverse(remainingNumbers, nextRune)
 }
-
-// GetCountry
-//
-//	returns ISO3166-alfa2 country code from phoneNumber
-//	returns InvalidPhoneNumber if phone number is invalid
-func GetCountry(phoneNumber uint64) (string, error) {
-	return traverse(reverseNumber(phoneNumber), mapping)
-}
-
-// MustGetCountry
-//
-//	same as GetCountry, but raises panic on error
-func MustGetCountry(phoneNumber uint64) string {
-	country, err := GetCountry(phoneNumber)
-	check(err)
-	return country
-}

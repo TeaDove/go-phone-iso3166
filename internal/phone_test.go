@@ -6,6 +6,11 @@ import (
 	"github.com/stretchr/testify/assert"
 )
 
+func TestUnit_GetCountryFromStringRU_Ok(t *testing.T) {
+	countryCode := MustGetCountryFromString("79778725196")
+	assert.Equal(t, countryCode, "RU")
+}
+
 func TestUnit_GetCountryRU_Ok(t *testing.T) {
 	countryCode := MustGetCountry(79778725196)
 	assert.Equal(t, countryCode, "RU")

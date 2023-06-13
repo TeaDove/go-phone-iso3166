@@ -1,4 +1,4 @@
-package internal
+package phone_iso3166
 
 import "log"
 

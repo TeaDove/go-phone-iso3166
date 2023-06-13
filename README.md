@@ -22,12 +22,12 @@ package main
 
 import "github.com/teadove/go-phone-iso3166/phone_iso3166"
 
-func main(){
-    countryCode, _ := phone_iso3166.GetCountry(79778725196)
-	print(countryCode) // prints "RU"
-	
-	countryCode, _ := phone_iso3166.GetCountryFromString("77051140999")
-    print(countryCode) // prints "KZ"
+func main() {
+	ru, _ := phone_iso3166.GetCountry(79778725196)
+	println(ru) // prints "RU"
+
+    kz, _ := phone_iso3166.GetCountryFromString("77051140999")
+	println(kz) // prints "KZ"
 }
 ```
 
